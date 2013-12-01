@@ -46,6 +46,7 @@ class people::take {
   include virtualbox
 #  include go
   include zsh
+  include ohmyzsh
   include tmux
   include mysql
   include redis
