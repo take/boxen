@@ -15,6 +15,7 @@ class people::take {
   include hipchat
   include macvim
   include appcleaner
+  include bartender
 
   # keyremap4macbook configs
   keyremap4macbook::set { 'repeat.wait':

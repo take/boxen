@@ -199,7 +199,9 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: erichkist/puppet-bartender
   specs:
+    bartender (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -219,6 +221,7 @@ GITHUBTARBALL
 DEPENDENCIES
   alfred (= 1.1.7)
   appcleaner (= 1.0.0)
+  bartender (= 1.0.0)
   boxen (= 3.3.4)
   chrome (= 1.1.2)
   dnsmasq (= 1.0.0)
