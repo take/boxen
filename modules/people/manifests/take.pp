@@ -33,6 +33,9 @@ class people::take {
       'jis_optionL2optionL_eisuu',
     ]:
   }
+
+  # Apps which will be launched in login
+  include people::take::login_items
 # [todo] - Figure out a way to use something similar to heredoc
 #   $private_xml = <<-XML
 # <?xml version="1.0"?>
