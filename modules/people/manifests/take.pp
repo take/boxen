@@ -34,8 +34,6 @@ class people::take {
     ]:
   }
 
-  # Apps which will be launched in login
-  include people::take::login_items
 # [todo] - Figure out a way to use something similar to heredoc
 #   $private_xml = <<-XML
 # <?xml version="1.0"?>
@@ -43,6 +41,9 @@ class people::take {
 #   keyremap4macbook::private_xml{ 'private.xml':
 #     content => $private_xml
 #   }
+
+  # Apps which will be launched in login
+  include people::take::login_items
 
   # Non apps
   include heroku
