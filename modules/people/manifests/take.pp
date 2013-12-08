@@ -1,7 +1,9 @@
 class people::take {
   # Apps
   include alfred
+  include chrome
   include onepassword
+  include onepassword::chrome
   include dropbox
   include iterm2::stable
   include github_for_mac
@@ -10,7 +12,6 @@ class people::take {
   include istatmenus4
   include skype
   include sequel_pro
-  include chrome
   include firefox
   include hipchat
   include macvim
