@@ -1,4 +1,6 @@
 class people::take {
+  include people::take::osx_settings
+
   # Apps
   include alfred
   include chrome
