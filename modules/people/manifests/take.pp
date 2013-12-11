@@ -65,23 +65,4 @@ class people::take {
       'direnv',
     ]:
   }
-
-#   package { 'homesick':
-#     ensure   => 'installed',
-#     provider => 'gem'
-#   }
-# 
-#   $home     = "/Users/${::boxen_user}"
-#   $homesick = "${home}/.homesick"
-#   
-#   file { $homesick:
-#     ensure  => directory
-#   }
-# 
-#   $dotfiles = "${my}/dotfiles"
-# 
-#   repository { $dotfiles:
-#     source  => 'take/dotfiles',
-#     require => File[$my]
-#   }
 }
