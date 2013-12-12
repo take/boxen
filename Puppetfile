@@ -69,7 +69,6 @@ github "sequel_pro", "1.0.1"
 github "chrome", "1.1.2"
 github "firefox", "1.1.5"
 github "hipchat", "1.1.0"
-github "macvim", "1.0.0"
 github "appcleaner", "1.0.0"
 github "bartender", "1.0.0", repo: "erichkist/puppet-bartender"
 

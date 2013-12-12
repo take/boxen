@@ -16,7 +16,6 @@ class people::take {
   include sequel_pro
   include firefox
   include hipchat
-  include macvim
   include appcleaner
   include bartender
 
@@ -66,5 +65,13 @@ class people::take {
       'reattach-to-user-namespace',
       'direnv',
     ]:
+  }
+  package { 'macvim':
+    ensure          => installed,
+    install_options => [
+      '--with-cscope',
+      '--override-system-vim',
+      '--with-lua',
+    ];
   }
 }
