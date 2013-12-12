@@ -25,3 +25,7 @@ $ script/boxen --no-fde
 ```
 
 `--no-fde` will disable hard drive encrypt
+
+# Things which needs to be manually done
+
+- Importing iterm2 colorscheme(base16 eighties isn't added in https://github.com/boxen/puppet-iterm2#colors)
