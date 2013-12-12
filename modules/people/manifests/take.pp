@@ -36,6 +36,16 @@ class people::take {
     ]:
   }
 
+  # Open github for mac from CUI
+  $user_bin = "/Users/${::luser}/bin"
+  file { $user_bin:
+    ensure => directory,
+  }
+  file { "${user_bin}/gha":
+    ensure => 'link',
+    target => '/Applications/GitHub.app/Contents/MacOS/github_cli',
+  }
+
 # [todo] - Figure out a way to use something similar to heredoc
 #   $private_xml = <<-XML
 # <?xml version="1.0"?>
