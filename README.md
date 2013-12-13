@@ -29,3 +29,4 @@ $ script/boxen --no-fde
 # Things which needs to be manually done
 
 - Importing iterm2 colorscheme(base16 eighties isn't added in https://github.com/boxen/puppet-iterm2#colors)
+- Enabling dragging(which can be configured in the Accessibility window in System Preferences)
