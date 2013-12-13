@@ -44,4 +44,12 @@ class people::take::osx_settings {
     type   => 'int',
     value  => $tapBehavior,
   }
+
+  boxen::osx_defaults { 'Show remaining battery percentage':
+    user   => $::luser,
+    domain => 'com.apple.menuextra.battery',
+    key    => 'ShowPercent',
+    type   => 'string',
+    value  => 'YES',
+  }
 }
