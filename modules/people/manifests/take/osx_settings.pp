@@ -52,4 +52,12 @@ class people::take::osx_settings {
     type   => 'string',
     value  => 'YES',
   }
+
+  boxen::osx_defaults { 'Save screenshots to the desktop':
+    user   => $::luser,
+    domain => 'com.apple.screencapture',
+    key    => 'location',
+    type   => 'string',
+    value  => '~/Desktop',
+  }
 }
