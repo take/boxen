@@ -15,17 +15,17 @@ class people::take::osx_settings {
     value  => false,
   }
 
-  $tapBehavior = $dragging ? {
-    true    => 2,
-    default => 1
-  }
-
   boxen::osx_defaults { 'Enable tap to click on a Magic Trackpad':
     user   => $::luser,
     domain => 'com.apple.driver.AppleBluetoothMultitouch.trackpad',
     key    => 'Clicking',
     type   => 'bool',
     value  => true,
+  }
+
+  $tapBehavior = $dragging ? {
+    true    => 2,
+    default => 1
   }
 
   boxen::osx_defaults { 'Enable tap to click for the active user':
