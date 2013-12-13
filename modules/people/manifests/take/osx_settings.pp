@@ -1,4 +1,6 @@
 class people::take::osx_settings {
+  include osx::finder::show_hidden_files
+
   boxen::osx_defaults { 'Activating Dock auto-hide':
     user   => $::luser,
     domain => 'com.apple.dock',
