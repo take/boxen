@@ -1,6 +1,3 @@
-boxen
-=====
-
 # Inital Setup
 
 ## Install xcode command line tool
