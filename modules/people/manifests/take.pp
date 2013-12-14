@@ -84,4 +84,14 @@ class people::take {
       '--with-lua',
     ];
   }
+
+  package {
+    'Kobito':
+      source   => 'http://kobito.qiita.com/download/Kobito_v1.8.5.zip',
+      provider => compressed_app;
+    'GoogleJapaneseInput':
+      source   =>
+        'http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg',
+      provider => pkgdmg;
+  }
 }
