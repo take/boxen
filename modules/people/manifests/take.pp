@@ -35,6 +35,10 @@ class people::take {
       'jis_optionL2optionL_eisuu',
     ]:
   }
+  keyremap4macbook::private_xml{ 'private.xml':
+    content =>
+      "${boxen::config::repodir}/modules/people/manifests/take/private.xml"
+  }
 
   # Open github for mac from CUI
   $user_bin = "/Users/${::luser}/bin"
@@ -45,14 +49,6 @@ class people::take {
     ensure => 'link',
     target => '/Applications/GitHub.app/Contents/MacOS/github_cli',
   }
-
-# [todo] - Figure out a way to use something similar to heredoc
-#   $private_xml = <<-XML
-# <?xml version="1.0"?>
-# XML
-#   keyremap4macbook::private_xml{ 'private.xml':
-#     content => $private_xml
-#   }
 
   # Apps which will be launched in login
   include people::take::login_items
