@@ -65,6 +65,7 @@ class people::take {
   include mysql
   include redis
   include mongodb
+  include imagemagick
 
   # homebrews
   package {
