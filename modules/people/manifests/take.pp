@@ -1,6 +1,7 @@
 class people::take {
   include people::take::osx_settings
   include people::take::ruby
+  include people::take::nodejs
 
   # Apps
   include alfred
