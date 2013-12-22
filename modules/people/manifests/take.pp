@@ -20,6 +20,7 @@ class people::take {
   include hipchat
   include appcleaner
   include bartender
+  include vlc
 
   # keyremap4macbook configs
   keyremap4macbook::set { 'repeat.wait':
