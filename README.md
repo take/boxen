@@ -38,3 +38,8 @@ $ script/boxen --no-fde
 - Enabling dragging(which can be configured in the Accessibility window in System Preferences)
 - Disable Guest User(wait for boxen/puppet-osx/#12 I guess..?)
 - Settings for keyboard input sources(use google IME)
+
+## Apps from the AppStore
+
+- Line
+- Tweetdeck
