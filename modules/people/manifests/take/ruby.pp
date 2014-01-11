@@ -1,6 +1,7 @@
 class people::take::ruby {
-  $version = '2.0.0-p353'
+  $version = '2.1.0'
 
+  ruby::version { '2.0.0-p353': }
   class { 'ruby::global':
     version => $version
   }
