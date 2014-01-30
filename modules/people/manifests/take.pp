@@ -21,6 +21,7 @@ class people::take {
   include appcleaner
   include bartender
   include vlc
+  include evernote
 
   # keyremap4macbook configs
   keyremap4macbook::set { 'repeat.wait':

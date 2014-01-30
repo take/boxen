@@ -72,6 +72,7 @@ github "hipchat", "1.1.0"
 github "appcleaner", "1.0.0"
 github "bartender", "1.0.0", repo: "erichkist/puppet-bartender"
 github "vlc", "1.0.5"
+github "evernote", "2.0.3"
 
 github "heroku", "2.0.0"
 github "vagrant", "3.0.0"
