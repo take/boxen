@@ -75,6 +75,7 @@ class people::take {
     [
       'reattach-to-user-namespace',
       'direnv',
+      'ag',
     ]:
   }
   package { 'macvim':
