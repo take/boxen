@@ -11,8 +11,6 @@ class people::take {
   include dropbox
   include iterm2::stable
   include github_for_mac
-  include keyremap4macbook
-  include keyremap4macbook::login_item
   include istatmenus4
   include skype
   include sequel_pro
@@ -22,27 +20,6 @@ class people::take {
   include bartender
   include vlc
   include evernote
-
-  # keyremap4macbook configs
-  keyremap4macbook::set { 'repeat.wait':
-    value => '45'
-  }
-  keyremap4macbook::set { 'repeat.initial_wait':
-    value => '250'
-  }
-  keyremap4macbook::set { 'option.extra_cursor_optionL_kjhl':
-    value => '1'
-  }
-  keyremap4macbook::remap {
-    [
-      'jis_optionR2optionR_kana',
-      'jis_optionL2optionL_eisuu',
-    ]:
-  }
-  keyremap4macbook::private_xml{ 'private.xml':
-    content =>
-      "${boxen::config::repodir}/modules/people/manifests/take/private.xml"
-  }
 
   # Open github for mac from CUI
   $user_bin = "/Users/${::luser}/bin"
